@@ -23,7 +23,7 @@
 
         <div class="col-md-12 col-lg-8 main-content">
 
-                    @await Component.InvokeAsync("_ArticleDetailContentComponentPartial")
+                    @await Component.InvokeAsync("_ArticleDetailContentComponentPartial",new {id=ViewBag.i})
 
 
           <div class="pt-5">
@@ -31,7 +31,7 @@
           </div>
 
 
-                    @await Component.InvokeAsync("_ArticleDetailCommentListComponentPartial")
+                    @await Component.InvokeAsync("_ArticleDetailCommentListComponentPartial", new { id = ViewBag.i })
 
         </div>
 
